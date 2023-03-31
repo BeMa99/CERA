@@ -9,8 +9,12 @@ body{
 }
 #overall_background_welcome {
 	background-color:transparent;
-	height:100%;
-	width:100%;
+	-webkit-height: 100%;
+	    -moz-height: 100%;
+	    -o-height: 100%;
+	-webkit-width: 100%;
+	    -moz-width: 100%;
+	    -o-width: 100%;
 	padding-top:50px;
 	top:0;
 	bottom:0;
@@ -21,7 +25,12 @@ body{
 }
 #div1_welcome{
     box-shadow:inset 2px -2px 2px, inset -2px 2px 2px ;
-    height:100%;
+    -webkit-height: 100%;
+    -moz-height: 100%;
+    -o-height: 100%;
+-webkit-width: 100%;
+    -moz-width: 100%;
+    -o-width: 100%;
     z-index:100;
     position:relative;
     text-align:left;
@@ -37,8 +46,12 @@ body{
 
 #overall_background {
 	background-color:transparent;
-	height:100%;
-	width:100%;
+	-webkit-height: 100%;
+	    -moz-height: 100%;
+	    -o-height: 100%;
+	-webkit-width: 100%;
+	    -moz-width: 100%;
+	    -o-width: 100%;
 	padding-top:100px;
 	top:0;
 	bottom:0;
@@ -111,7 +124,12 @@ body{
 
 #div1{
     box-shadow:inset 2px -2px 2px, inset -2px 2px 2px ;
-    height:500px;
+    -webkit-height: 100%;
+    -moz-height: 100%;
+    -o-height: 100%;
+	-webkit-width: 100%;
+    -moz-width: 100%;
+    -o-width: 100%;
     z-index:100;
     position:relative;
     text-align:left;
@@ -148,7 +166,13 @@ body{
     margin-bottom:15px;
     font-size:20px;
 	z-index:0;
-    height:500px;
+    -webkit-height: 100%;
+    -moz-height: 100%;
+    -o-height: 100%;
+-webkit-width: 100%;
+    -moz-width: 100%;
+    -o-width: 100%;
+	position:relative;
     filter:opacity(170%) ;
 }
 
