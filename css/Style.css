@@ -181,7 +181,7 @@ body{
 #buttonStyleVideo {
     color:white;
     width:150px;
-    height:100%;
+    height:50px;
     border:none;
     margin-right:20px;
     background-color:orange;
@@ -190,7 +190,7 @@ body{
 #buttonStyleTranscript {
     color:black;
     width:150px;
-    height:100%;
+    height:50px;
     border:none;
     margin:20px;
     background-color:#fbfac2;
