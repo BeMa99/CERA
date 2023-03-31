@@ -21,7 +21,7 @@ body{
 }
 #div1_welcome{
     box-shadow:inset 2px -2px 2px, inset -2px 2px 2px ;
-    height:500px;
+    height:100%;
     z-index:100;
     position:relative;
     text-align:left;
