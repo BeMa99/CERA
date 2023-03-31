@@ -19,7 +19,7 @@
             <ul class="menu">
                 <li><a class="active" href = "#overall_background2">Home</a></li>
                 <li><a href = "#activities">About Us</a></li>
-                <li><a href = "index.html">Logout</a></li>
+                <li><a href = "Welcome.html">Logout</a></li>
                 <li><a href = "#">Projects</a></li>
                 <li><a href = "#contacts">Contact Us</a></li>
             </ul>
@@ -39,9 +39,61 @@
                 </div>
             </div>
 
-            <div id = "activities" class = "row-md-6">
+            <div id = "activities" class = "row-md-6" style="text-align:center">
                 <h2 style="text-align:center; color: orange;text-decoration:underline;"><strong>ABOUT CERA</strong></h2><br/>
-                <p>  </p>
+                <a href="#video-description"><button onclick = "openVideo();" id = "buttonStyleVideo">Open Video</button></a>
+                <a href="#transcript"><button onclick = "openTranscript();" id = "buttonStyleTranscript">Read Transcript</button><br/></a>
+                <div id="video-description" style="position:relative">
+                    <video width="550" height="400" style="border:1px 1px 1px" controls>
+                        <source src="img/CERA.mp4" type="video/mp4"/>
+                        Your browser does not support video tag
+                    </video><br/>
+                    <a href="#activities"><button type = "button" class="btn-cancel" onclick="closeVideo();">Close Video</button></a>
+                </div>
+                <div id="transcript" style="position:relative">
+                    <div>
+                        <button type = "button" class="btn-cancel-trasncript" width="20px" onclick="closeTranscript();"><strong>X</strong></button>
+                        <h2>Mary Wanjiku</h2>
+                        <p>Mary is a teacher and a mother of two children. She lives in Nyeri, a town located in central Kenya. A few months ago, Mary was diagnosed with breast cancer at a hospital in Nyeri and  was referred to an oncologist located in Nairobi, which is about a three-hour drive away. Mary is unable to travel to Nairobi for every appointment due to the distance and the cost of transportation.Moreover, she must queue for hours before she is able to see an oncologist, forcing her to return home at night or find a place to stay the night.Due to lack of funds , she is forced to sleep in hospital corridors which is not safe. However, she still needs to receive regular follow-up care and monitoring to ensure that her chemotherapy treatment is effective and to manage any side effects.
+                            Aside from the medical challenges, Mary is also struggling emotionally. She feels very alone in her battle with cancer. She wishes she could talk to someone who understands what she's going through and can offer her some guidance on how to cope.
+                            May also feels that her understanding of cancer is limited and wishes she had access to more educational resources. She has a basic understanding of the disease, but she doesn't know much about the different types of treatments available or what to expect during her chemotherapy sessions. She has tried to do her own research online, but she finds it difficult to navigate the overwhelming amount of information available, and she often feels confused and frustrated.</p>
+                        <h2>THE PROBLEM</h2>
+                        <h3>LACK OF ACCESS TO ………….</h3>
+                        <p>This is the case for many Kenyans suffering from cancer. Access to cancer specialists is a significant challenge. The country has a shortage of oncologists, and the few available are mostly concentrated in major cities, leaving patients in rural areas with limited access to cancer care.Due to the high number of patients seeking different cancer services, the situation gets worse due to the long wait to just see an oncologist.
+                            According to a report by the National Cancer Institute, there are only 58 oncologists in Kenya. </p>
+                        <h3>LACK OF AWARENESS</h3>
+                        <p>Lack of awareness of cancer leads to delayed diagnosis and treatment. It also affects cancer prevention efforts in Kenya. Many people do not engage in cancer prevention activities such as regular screening, healthy eating, and exercise. As a result, many cases of cancer in Kenya are diagnosed at advanced stages, which makes treatment more difficult and less effective.
+                            Some people in Kenya still hold traditional beliefs about cancer which leads to stigma and discrimination against cancer patients.</p>
+                        <h2>SOLUTION </h2>
+                        <h4>PURPOSE</h4>
+                        <p><strong>Cera</strong>, an all encompassing app for full cancer care. It will enable oncologists and healthcare providers to work together with the patient to coordinate their care and ensure they receive the appropriate treatment in the comfort of their homes. The app ensures remote access to oncologists ,monitoring of treatment, adherence to medication, early detection of side effects and treatment failure ,offers education on their conditions and preserves the patient’s mental health.</p>
+                        <h4>THE APP</h4>.
+                        Cera is a mobile and web application that will be installed in healthcare facilities as well as the patient’s phone to facilitate connection between cancer patients and cancer specialists.
+                        <h2>Through Cera</h2>
+                        -The oncologists can set up appointments with the patients where treatment is prescribed. The patient will receive reminders for follow-up.
+                        -The patient can view nearby cancer care centres offering treatment where their vitals and test results during chemo can be uploaded.
+                        <h4>ELECTRONIC HEALTH RECORDS</h4> - The patient’s information such as test results and history are uploaded and made available to the oncologist. 
+                        <h4>TELEMEDICINE</h4> - the oncologists can set up appointments with the patients. Patients can communicate with healthcare providers remotely through secure video calls or messaging. This would enable patients to receive timely care and support without the need to travel to a healthcare facility
+                        <h4>PATIENT DIARY</h4> - The patient can log in their medication intake, symptoms, and how they feel daily. The patient receives reminders to take their medication and fill in their daily logs. 
+                        <h4>REMOTE MONITORING</h4> - the patient’s symptoms and response to treatment is monitored through their daily logs. The app intelligently tracks the patient's symptoms and automatically alerts the doctor of any red flags so that timely intervention can take place.
+                        <h4>TELE COUNSELLING</h4> - the patient is able to set up meetings with a therapist or a counsellor to improve their mental health. In addition, they can be connected to nearby cancer patients to form support groups.
+                        <ul>
+                            <li>One on one counselling sessions with therapist</li>
+                            <li>Group sessions with therapist and other cancer patients</li>
+                        </ul>
+                        -Data from the app can be used to add to help in medical research and inform policies concerning cancer patients.
+
+                        <h2>BUSINESS MODEL</h2>
+                        <h2>REVENUE GENERATION</h2> - Hospitals pay a yearly subscription fee
+                        <h2>FUNDING</h2> - Grants from investors
+
+                        <h2>COMPETITORS</h2>
+
+
+                        <h2>ACTION PLAN</h2>
+                    </div>
+                    <a href="#activities"><button type = "button" class="btn-cancel" onclick="closeTranscript();">Close Transcript</button></a>
+                </div>
             </div>
 
             <div id = "users" class = "row-md-6">
@@ -113,6 +165,24 @@
 function sentConfirm()
 {
 	alert("You Will Now Receive Newsletters From CERA!");
+}
+function openVideo()
+{
+	document.getElementById("video-description").style.display="block";
+    document.getElementById("transcript").style.display="none";
+}
+function closeVideo()
+{
+	document.getElementById("video-description").style.display="none";
+}
+function openTranscript()
+{
+	document.getElementById("transcript").style.display="block";
+    document.getElementById("video-description").style.display="none";
+}
+function closeTranscript()
+{
+	document.getElementById("transcript").style.display="none";
 }
 function openForm3()
 {
